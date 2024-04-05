@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm2qch07HFqMvAhLIoFz6CwbYoKxkvKM9vaJ+v5HF/sUv8OUVfQ6ldJXoqhf5O6aSUjpap3Xfw74ri8lzYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Temperature Converter</h1>
+            <div class="converter">
+                <div class="input-temp">
+                    <label for="temp-input"><i class="fas fa-thermometer-half"></i> Enter Temperature:</label>
+                    <input type="number" id="temp-input" placeholder="0">
+                </div>
+                <div class="temp-type">
+                    <label for="temp-type-input"><i class="fas fa-temperature-high"></i> Temperature Type:</label>
+                    <select id="temp-type-input">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                
+                <div class="result-container">
+                    <label for="result"><i class="fas fa-temperature-low"></i> Result:</label>
+                    <div class="result" id="result"></div>
+                </div>
+                <div class="buttons">
+                    <button id="convert-btn"><i class="fas fa-exchange-alt"></i> Convert</button>
+                    <button id="reset-btn"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
